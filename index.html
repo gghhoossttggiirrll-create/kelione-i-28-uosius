@@ -1,0 +1,303 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kelionė į 28-uosius</title>
+<style>
+:root{--bg:#080d0a;--panel:#101914;--panel2:#0c130f;--line:#294332;--green:#75f5a1;--green2:#b5ffca;--muted:#8da797;--text:#e5f2e8;--red:#ff7777;--amber:#ffd27a}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at top,#14251a 0,#080d0a 48%,#050806 100%);color:var(--text);font:16px/1.55 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;min-height:100vh}
+body:before{content:"";pointer-events:none;position:fixed;inset:0;background:repeating-linear-gradient(0deg,transparent 0 3px,rgba(117,245,161,.025) 4px);z-index:0}
+main{position:relative;z-index:1;max-width:980px;margin:auto;padding:28px 18px 56px}.topbar{display:flex;justify-content:space-between;gap:12px;align-items:center;border-bottom:1px solid var(--line);padding:0 0 16px;margin-bottom:28px;color:var(--muted);font-size:.78rem;letter-spacing:.1em}.brand{color:var(--green);font-weight:800}.status{border:1px solid var(--line);padding:4px 9px;border-radius:3px}
+.hero{padding:28px clamp(18px,5vw,48px);border:1px solid var(--line);background:linear-gradient(135deg,rgba(18,34,23,.96),rgba(8,14,10,.94));box-shadow:0 18px 60px #0007;margin-bottom:22px}.eyebrow{color:var(--green);font-size:.78rem;letter-spacing:.2em}.hero h1{font-size:clamp(2.3rem,7vw,5rem);line-height:.98;letter-spacing:-.06em;margin:12px 0 16px}.hero h1 span{color:var(--green)}.hero p{color:#b1c5b7;max-width:660px}.progress-wrap{display:flex;gap:8px;margin-top:24px}.progress-seg{height:5px;flex:1;background:#25342a;border-radius:10px}.progress-seg.done{background:var(--green);box-shadow:0 0 12px #75f5a155}
+.layout{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(240px,.8fr);gap:18px}.panel{border:1px solid var(--line);background:rgba(13,21,16,.94);padding:22px;margin-bottom:18px}.panel h2{font-size:1.1rem;margin:0 0 14px;color:var(--green2);letter-spacing:.03em}.tag{display:inline-block;border:1px solid #35513e;color:var(--green);font-size:.7rem;padding:3px 7px;margin-bottom:12px;letter-spacing:.12em}.muted{color:var(--muted)}.mission-title{font-size:1.45rem;margin:2px 0 12px}.prompt{background:#070b08;border:1px solid #25392b;padding:15px;white-space:pre-wrap;color:var(--green2);overflow-wrap:anywhere;margin:14px 0}.hint{color:var(--amber);font-size:.88rem}.input-row{display:flex;gap:8px;flex-wrap:wrap;margin-top:14px}input,button{font:inherit;border-radius:3px}input{background:#060a07;border:1px solid #3a5844;color:var(--text);padding:12px;min-width:0;flex:1;outline:none}input:focus{border-color:var(--green);box-shadow:0 0 0 2px #75f5a122}button{background:var(--green);color:#071009;border:1px solid var(--green);padding:11px 15px;font-weight:800;cursor:pointer;transition:.15s}button:hover{filter:brightness(1.1);transform:translateY(-1px)}button.secondary{background:transparent;color:var(--green);border-color:#3a5844}button:disabled{opacity:.35;cursor:not-allowed;transform:none}.feedback{min-height:28px;margin-top:10px;font-size:.88rem}.feedback.good{color:var(--green)}.feedback.bad{color:var(--red)}.side-list{list-style:none;padding:0;margin:0}.side-list li{display:flex;justify-content:space-between;gap:12px;padding:12px 0;border-bottom:1px solid #1e2e23}.side-list li:last-child{border-bottom:0}.lock{color:var(--muted);font-size:.75rem}.lock.open{color:var(--green)}.mini{font-size:.8rem}.callout{border-left:2px solid var(--green);padding:8px 0 8px 12px;color:#b1c5b7}.chessboard{display:grid;grid-template-columns:repeat(8,1fr);max-width:420px;border:2px solid #45614d;margin:14px auto}.square{aspect-ratio:1;border:0;border-radius:0;padding:0;display:grid;place-items:center;font-size:clamp(1.25rem,4vw,2.2rem);line-height:1}.square.light{background:#d7e5d8;color:#16251a}.square.dark{background:#46634e;color:#f1fff4}.square.selected{outline:3px solid var(--amber);outline-offset:-4px}.square.target{box-shadow:inset 0 0 0 4px var(--green)}.square:focus-visible{outline:3px solid var(--amber);outline-offset:-3px}.board-caption{text-align:center;color:var(--muted);font-size:.78rem}.table-wrap{overflow:auto}.cipher-table{border-collapse:collapse;width:100%;text-align:center}.cipher-table th,.cipher-table td{border:1px solid #2b4232;padding:7px;min-width:28px}.cipher-table th{color:var(--green);background:#142219}.cipher-table td{background:#0a100c}.hidden{display:none!important}.final-code{font-size:clamp(1.35rem,4vw,2.4rem);letter-spacing:.12em;color:var(--green);background:#050805;border:1px dashed var(--green);padding:20px;text-align:center;overflow-wrap:anywhere}.footer{margin-top:22px;text-align:center;color:#607567;font-size:.75rem}.toast{padding:10px;border:1px solid #3b6046;color:var(--green);margin-top:12px}.smallbtn{padding:6px 9px;font-size:.78rem}
+@media(max-width:760px){.layout{grid-template-columns:1fr}.hero{padding:22px 18px}.panel{padding:18px}.topbar{font-size:.67rem}.status{white-space:nowrap}}
+</style>
+</head>
+<body>
+<main>
+  <div class="topbar"><div><span class="brand">▣ GIFT_OS</span> <span>// SECURE ACCESS TERMINAL</span></div><div class="status" id="topStatus">SYSTEM LOCKED</div></div>
+  <section class="hero">
+    <div class="eyebrow">SPECIALI MISIJA // 28-ASIS LYGIS</div>
+    <h1>KELIONĖ Į<br><span>28-UOSIUS</span></h1>
+    <p>Tavo misija turi 5 užduotis, paremtas jūsų istorija. Išspręsk jas visas, įrodyk, kad esi vertas agento vardo, o pabaigoje — pabučiuok savo sužadėtinę ir atsiimk dovanų kuponą!</p>
+    <div class="progress-wrap" aria-label="Mission progress"><div class="progress-seg" id="seg0"></div><div class="progress-seg" id="seg1"></div><div class="progress-seg" id="seg2"></div><div class="progress-seg" id="seg3"></div><div class="progress-seg" id="seg4"></div></div>
+    <div class="mini muted" style="margin-top:10px" id="progressText">PROGRESS: 0 / 3 SECURITY LAYERS</div>
+  </section>
+
+  <div class="layout">
+    <div>
+      <section class="panel" id="missionPanel">
+        <div class="tag" id="stageTag">LAYER 01 // SIGNAL INTERCEPT</div>
+        <h2 class="mission-title" id="missionTitle">Decode the signal</h2>
+        <p id="missionIntro">Pirmasis pranešimas užkoduotas 8 bitų ASCII formatu. Suskirstyk bitus į baitus ir paversk tekstu.</p>
+        <div class="prompt" id="missionPrompt">01000001 01001100 01000110 01000001 00100000 01010010 01001111 01001101 01000101 01001111</div>
+        <div id="asciiReference" class="panel" style="padding:14px;margin:12px 0;background:#0a100c">
+          <h2 style="font-size:.95rem;margin-bottom:8px">ASCII QUICK REFERENCE // BINARY → DECIMAL → CHARACTER</h2>
+          <p class="mini muted" style="margin-top:0">Kiekvienas 8 bitų blokas yra vienas simbolis. Rask dvejetainį kodą lentelėje ir perskaityk atitinkamą raidę arba tarpą.</p>
+          <div class="table-wrap">
+            <table class="cipher-table">
+              <thead><tr><th>Binary</th><th>Decimal</th><th>ASCII</th></tr></thead>
+              <tbody>
+                <tr><td>01000001</td><td>65</td><td>A</td></tr>
+                <tr><td>01000010</td><td>66</td><td>B</td></tr>
+                <tr><td>01000011</td><td>67</td><td>C</td></tr>
+                <tr><td>01000100</td><td>68</td><td>D</td></tr>
+                <tr><td>01000101</td><td>69</td><td>E</td></tr>
+                <tr><td>01000110</td><td>70</td><td>F</td></tr>
+                <tr><td>01000111</td><td>71</td><td>G</td></tr>
+                <tr><td>01001000</td><td>72</td><td>H</td></tr>
+                <tr><td>01001001</td><td>73</td><td>I</td></tr>
+                <tr><td>01001010</td><td>74</td><td>J</td></tr>
+                <tr><td>01001011</td><td>75</td><td>K</td></tr>
+                <tr><td>01001100</td><td>76</td><td>L</td></tr>
+                <tr><td>01001101</td><td>77</td><td>M</td></tr>
+                <tr><td>01001110</td><td>78</td><td>N</td></tr>
+                <tr><td>01001111</td><td>79</td><td>O</td></tr>
+                <tr><td>01010000</td><td>80</td><td>P</td></tr>
+                <tr><td>01010001</td><td>81</td><td>Q</td></tr>
+                <tr><td>01010010</td><td>82</td><td>R</td></tr>
+                <tr><td>01010011</td><td>83</td><td>S</td></tr>
+                <tr><td>01010100</td><td>84</td><td>T</td></tr>
+                <tr><td>01010101</td><td>85</td><td>U</td></tr>
+                <tr><td>01010110</td><td>86</td><td>V</td></tr>
+                <tr><td>01010111</td><td>87</td><td>W</td></tr>
+                <tr><td>01011000</td><td>88</td><td>X</td></tr>
+                <tr><td>01011001</td><td>89</td><td>Y</td></tr>
+                <tr><td>01011010</td><td>90</td><td>Z</td></tr>
+                <tr><td>00100000</td><td>32</td><td>[SPACE]</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div id="dynamicArea"></div>
+        <div id="caesarReference" class="panel hidden" style="padding:14px;margin:12px 0;background:#0a100c">
+          <h2 style="font-size:.95rem;margin-bottom:8px">MEMORY LANE // DATE CHECK</h2>
+          <p class="mini muted" style="margin-top:0">Instrukcija: kiekvieną užšifruotą raidę pakeisk raide, esančia trimis pozicijomis atgal abėcėlėje. Skaičių ir brūkšnelių nekeisk. Abėcėlė apsisuka: A → X, B → Y, C → Z.</p>
+          <div class="table-wrap">
+            <table class="cipher-table">
+              <thead><tr><th>Encrypted</th><th>A</th><th>B</th><th>C</th><th>D</th><th>E</th><th>F</th><th>G</th><th>H</th><th>I</th><th>J</th><th>K</th><th>L</th><th>M</th><th>N</th><th>O</th><th>P</th><th>Q</th><th>R</th><th>S</th><th>T</th><th>U</th><th>V</th><th>W</th><th>X</th><th>Y</th><th>Z</th></tr></thead>
+              <tbody><tr><th>Plaintext</th><td>X</td><td>Y</td><td>Z</td><td>A</td><td>B</td><td>C</td><td>D</td><td>E</td><td>F</td><td>G</td><td>H</td><td>I</td><td>J</td><td>K</td><td>L</td><td>M</td><td>N</td><td>O</td><td>P</td><td>Q</td><td>R</td><td>S</td><td>T</td><td>U</td><td>V</td><td>W</td></tr></tbody>
+            </table>
+          </div>
+          <p class="mini muted">Pavyzdys: šifruota raidė D → iššifruota A. Šifruota raidė Q → iššifruota N.</p>
+        </div>
+        <div class="input-row" id="answerRow"><input id="answerInput" autocomplete="off" spellcheck="false" aria-label="Your answer" placeholder="Įrašyk atsakymą…"><button id="submitBtn">VERIFY</button></div>
+        <div class="feedback" id="feedback" aria-live="polite"></div>
+        <div class="input-row"><button class="secondary smallbtn" id="hintBtn">REQUEST HINT</button><button class="secondary smallbtn" id="resetBtn">RESET MISSION</button></div>
+        <div id="hintBox" class="hint hidden"></div>
+      </section>
+      <section class="panel hidden" id="finalPanel">
+        <div class="tag">AUTHORIZATION GRANTED</div>
+        <h2 class="mission-title">Gift protocol unlocked.</h2>
+        <p>Puikiai atlikta, agente. Visas užduotis išsprendei teisingai — dabar privalai pabučiuoti savo sužadėtinę. 💋 Tada ji tau įteiks tikrąjį dovanų kuponą!</p>
+        <p class="callout">MISSION COMPLETE // Dovana laukia pas tavo sužadėtinę.</p>
+      </section>
+    </div>
+
+    <aside>
+      <section class="panel">
+        <h2>MISSION CONTROL</h2>
+        <ul class="side-list">
+          <li><span><strong>01</strong> Binary intercept</span><span class="lock" id="lock0">ACTIVE</span></li>
+          <li><span><strong>02</strong> The Target</span><span class="lock" id="lock1">LOCKED</span></li>
+          <li><span><strong>03</strong> Memory Lane</span><span class="lock" id="lock2">LOCKED</span></li>
+          <li><span><strong>04</strong> Mini crossword</span><span class="lock" id="lock3">LOCKED</span></li>
+          <li><span><strong>05</strong> Wordle protocol</span><span class="lock" id="lock4">LOCKED</span></li>
+        </ul>
+      </section>
+      <section class="panel">
+        <h2>AGENT NOTES</h2>
+        <p class="mini muted">• Atsakymai nėra jautrūs didžiosioms / mažosioms raidėms. Wordle žodis turi 6 raides.</p>
+        <p class="mini muted">• Užstrigus naudok REQUEST HINT.</p>
+        <p class="mini muted">• Šachmatų užduotyje spustelėk karalienę (QUEEN) lentoje.</p>
+        <p class="mini muted">• Pažanga išsaugoma tik atidarytame puslapyje. Uždarius ar perkrovus puslapį misija prasidės iš naujo.</p>
+      </section>
+      <section class="panel">
+        <h2>SECURITY LOG</h2>
+        <div id="log" class="mini muted">[19:04:01] Terminal initialized.<br>[19:04:02] Awaiting agent...</div>
+      </section>
+    </aside>
+  </div>
+  <div class="footer">GIFT_OS v1.0 // BUILT FOR ONE VERY CLEVER HUMAN</div>
+</main>
+<script>
+const stages = [
+ {tag:"LAYER 01 // SIGNAL INTERCEPT",title:"Decode the signal",intro:"Pirmasis pranešimas užkoduotas 8 bitų ASCII formatu. Suskirstyk bitus į baitus ir paversk tekstu.",prompt:"01010100 01001001 01001011 01001001 01010101 00100000 01010100 01000001 01010110 01001001 01001101 01001001",placeholder:"Įrašyk iššifruotą pranešimą…",answer:"ALFA ROMEO",hint:"Kiekvienas 8 bitų blokas reiškia vieną ASCII simbolį. Tarpai taip pat užkoduoti: 00100000.",introLog:"Binary signal intercepted.",success:"SIGNAL DECODED. BOARD PROTOCOL UNLOCKED."},
+ {tag:"LAYER 02 // OPERATION: THE TARGET",title:"Decode the clues",intro:"Šachmatų lentos nebėra — šį kartą taikinį reikia atpažinti iš užuominų. Perskaityk slaptą dosjė ir iššifruok, apie ką kalbama.",prompt:"CLASSIFIED FILE // SUBJECT UNKNOWN\nCLUE 01: Jis buvo šalia, kai tavo pasaulis dar buvo mažas.\nCLUE 02: Su juo praleidai daug vaikystės laiko.\nCLUE 03: Žmonės sako, kad esate panašūs.\nCLUE 04: Jo vardas turi 6 raides ir prasideda S raide.",placeholder:"Įrašyk taikinio vardą…",answer:"STASYS",hint:"Pagalvok apie artimą šeimos žmogų, su kuriuo sieja vaikystės prisiminimai. Vardas prasideda S ir turi šešias raides.",introLog:"Personal target dossier opened.",success:"TARGET IDENTIFIED. MEMORY LANE UNLOCKED."},
+ {tag:"LAYER 03 // OPERATION: MEMORY LANE",title:"Three memories. One timeline.",intro:"Šį kartą nereikia laužyti šifro — reikia prisiminti jūsų istoriją. Įrašyk visas tris datas formatu YYYY-MM-DD. Visi atsakymai tikrinami kartu.",prompt:"MEMORY CHECK 01 — Kada pradėjome draugauti paskutinį kartą?\nMEMORY CHECK 02 — O kada pradėjome draugauti pirmąjį kartą?\nMEMORY CHECK 03 — Kada pirmą kartą pasibučiavome?",placeholder:"Datos įrašomos žemiau",answer:"MEMORY",hint:"Naudok formatą YYYY-MM-DD. Kiekviena data turi būti tiksli.",introLog:"Memory Lane protocol loaded.",success:"MEMORY VERIFIED. CROSSWORD UNLOCKED."},
+ {tag:"LAYER 04 // CROSSWORD",title:"The operator's crossword",intro:"Išspręsk septynias asmenines užuominas apie jūsų sužadėtuves, mėgstamas vietas ir vidinius juokelius. Pirmųjų raidžių stulpelis atskleis paslėptą žodį.",prompt:"CROSSWORD GRID // 7 ACROSS + 1 HIDDEN WORD",placeholder:"",answer:"CROSSWORD",hint:"Prisimink sužadėtuves Nidoje, barus „Žvejai“ ir „Kaštonas“, jūsų vidinį juokelį bei PlayStation.",introLog:"Crossword module loaded.",success:"CROSSWORD SOLVED. WORDLE UNLOCKED."},
+ {tag:"LAYER 05 // WORDLE",title:"Wordle protocol",intro:"Atspėk 6 raidžių žodį per 6 bandymus. Žalia raidė yra tinkamoje vietoje, geltona yra žodyje, bet kitoje vietoje, pilka raidė žodyje nenaudojama.",prompt:"WORD LENGTH: 6 // ATTEMPTS: 6",placeholder:"Įrašyk 6 raidžių žodį…",answer:"KAUKAS",hint:"Tai lietuviškas žodis iš tautosakos – mitinė būtybė. Atsakymas turi 6 raides.",introLog:"Wordle protocol loaded.",success:"WORDLE SOLVED. GIFT PROTOCOL UNLOCKED."}
+];
+let stage=0, hintsUsed=[false,false,false,false,false], completed=[false,false,false,false,false], knightSelected=false, wordleGuesses=[], crosswordAnswers={};
+const $=id=>document.getElementById(id);
+function log(msg){const d=new Date();const stamp=[d.getHours(),d.getMinutes(),d.getSeconds()].map(x=>String(x).padStart(2,'0')).join(':');$('log').innerHTML=`[${stamp}] ${msg}<br>`+$('log').innerHTML; }
+function norm(s){return s.trim().toUpperCase().replace(/[–—]/g,'-').replace(/\s+/g,'');}
+function render(){
+ if(stage>=stages.length){$('missionPanel').classList.add('hidden');$('finalPanel').classList.remove('hidden');$('topStatus').textContent='ACCESS GRANTED';$('progressText').textContent='PROGRESS: 5 / 5 SECURITY LAYERS';for(let i=0;i<5;i++)$('seg'+i).classList.add('done');return;}
+ $('missionPanel').classList.remove('hidden');$('finalPanel').classList.add('hidden');
+ const s=stages[stage];$('stageTag').textContent=s.tag;$('missionTitle').textContent=s.title;$('missionIntro').textContent=s.intro;$('missionPrompt').textContent=s.prompt;$('answerInput').placeholder=s.placeholder;$('answerInput').value='';$('feedback').textContent='';$('feedback').className='feedback';$('hintBox').classList.add('hidden');$('hintBox').textContent='';
+ $('progressText').textContent=`PROGRESS: ${completed.filter(Boolean).length} / 5 SECURITY LAYERS`;$('topStatus').textContent=`LAYER ${String(stage+1).padStart(2,'0')} ACTIVE`;
+ for(let i=0;i<5;i++)$('seg'+i).classList.toggle('done',completed[i]);
+ for(let i=0;i<5;i++){const el=$('lock'+i);el.textContent=completed[i]?'CLEARED':i===stage?'ACTIVE':'LOCKED';el.className='lock'+(completed[i]?' open':'');}
+ $('dynamicArea').innerHTML='';
+ $('asciiReference').classList.toggle('hidden', stage !== 0);
+ $('caesarReference').classList.add('hidden');
+ $('answerRow').classList.toggle('hidden',stage===3 || stage===2);
+ $('submitBtn').textContent=stage===4?'GUESS':'VERIFY';
+ if(stage===1) renderTargetCipher();
+ if(stage===2) renderMemoryDates();
+ if(stage===3) renderCrossword();
+ if(stage===4) renderWordle();
+ $('answerInput').focus({preventScroll:true});
+}
+function renderMemoryDates(){
+ const area=$('dynamicArea');
+ const items=[
+  {id:'memoryCurrent',label:'01 // Paskutinė / dabartinė draugystės pradžia',value:'2018-07-08'},
+  {id:'memoryFirst',label:'02 // Pirmoji draugystės pradžia',value:'2017-04-02'},
+  {id:'memoryKiss',label:'03 // Pirmasis bučinys',value:'2016-09-01'}
+ ];
+ items.forEach(item=>{
+  const wrap=document.createElement('label');wrap.className='mini';wrap.style.display='block';wrap.style.margin='14px 0';
+  const title=document.createElement('span');title.style.color='var(--green)';title.style.fontWeight='800';title.textContent=item.label;
+  const inp=document.createElement('input');inp.id=item.id;inp.type='date';inp.value='';inp.style.width='100%';inp.style.marginTop='6px';inp.style.flex='none';inp.setAttribute('aria-label',item.label);
+  wrap.appendChild(title);wrap.appendChild(inp);area.appendChild(wrap);
+ });
+ const note=document.createElement('p');note.className='mini muted';note.textContent='Patarimas: datos bus tikrinamos tik paspaudus VERIFY. Teisingai įvedus visas tris, atsirakins kitas etapas.';area.appendChild(note);
+ const verify=document.createElement('button');verify.type='button';verify.textContent='VERIFY';verify.style.marginTop='8px';verify.addEventListener('click',submit);area.appendChild(verify);
+
+}
+function renderTargetCipher(){
+ const area=$('dynamicArea');
+ const file=document.createElement('div');
+ file.style.border='1px dashed #42634a';
+ file.style.background='#080d0a';
+ file.style.padding='16px';
+ file.style.margin='14px 0';
+ file.innerHTML='<div style="color:var(--green);font-weight:800;letter-spacing:.12em;margin-bottom:10px">PERSONNEL FILE // ENCRYPTED CLUES</div>';
+ const clues=[
+  ['01','Vaikystės liudininkas','Jis buvo šalia, kai tavo pasaulis dar buvo mažas.'],
+  ['02','Bendri prisiminimai','Su juo praleidai daug vaikystės laiko.'],
+  ['03','Atspindys','Kiti žmonės sako, kad esate panašūs.'],
+  ['04','Vardo raktas','6 raidės • prasideda raide S']
+ ];
+ clues.forEach(([n,title,body])=>{
+  const item=document.createElement('div');item.style.padding='9px 0';item.style.borderBottom='1px solid #1e2e23';
+  item.innerHTML='<span style="color:var(--amber)">'+n+' // </span><strong style="color:var(--green2)">'+title+'</strong><div style="color:#b1c5b7;margin-top:3px">'+body+'</div>';
+  file.appendChild(item);
+ });
+ const foot=document.createElement('div');foot.style.marginTop='12px';foot.style.color='var(--muted)';foot.style.fontSize='.8rem';foot.textContent='OBJECTIVE: nustatyk asmens vardą, remdamasis visomis keturiomis užuominomis.';
+ file.appendChild(foot);area.appendChild(file);
+}
+function renderCrossword(){
+ const area=$('dynamicArea');
+ const clueData=[
+  {id:'taip',num:'1',clue:'Koks trumpas žodis galėtų būti atsakymas į svarbiausią klausimą per sužadėtuves Nidoje? (4)',len:4,answer:'TAIP'},
+  {id:'romantika',num:'2',clue:'Koks restorano pavadinimas, kuriame vakarieniavome prieš sužadėtuves? (7 raidės)',len:7,answer:'BIZARRE'},
+  {id:'isdaiga',num:'3',clue:'Ką Gabrielė nuolat neteisingai nusako, sakydama, kad esi vyresnis, nei iš tikrųjų? (6 raidės)',len:6,answer:'AMŽIUS'},
+  {id:'uzeiga',num:'4',clue:'Ką gėrėte bare „Žvejai“, kur ir pasibučiavote? (4 raidės)',len:4,answer:'ALUS'},
+  {id:'sokiai',num:'5',clue:'Ką veikdavote naktiniame bare „Kaštonas“? (9 raidės)',len:9,answer:'ŠOKDAVOME'},
+  {id:'arklys',num:'6',clue:'Koks jūsų vidinio juokelio žodis, kuris tinka ir su Roberta? (6)',len:6,answer:'ARKLYS'},
+  {id:'sony',num:'7',clue:'Kokia įmonė gamina PlayStation? (4)',len:4,answer:'SONY'}
+ ];
+ const intro=document.createElement('p');intro.className='mini muted';intro.textContent='Įrašyk visus septynis horizontalius atsakymus. Pirmųjų raidžių stulpelis iš viršaus į apačią atskleis paslėptą žodį.';area.appendChild(intro);
+ const grid=document.createElement('div');grid.className='table-wrap';
+ const table=document.createElement('table');table.className='cipher-table';table.style.maxWidth='540px';table.style.margin='12px auto';
+ for(let r=0;r<clueData.length;r++){
+   const tr=document.createElement('tr');
+   for(let c=0;c<9;c++){
+     const td=document.createElement('td');td.style.width='34px';td.style.height='34px';td.style.padding='0';td.id=`cwcell-${r}-${c}`;
+     if(c<clueData[r].len){const extractCol=[0,4,3,2,0,0,0][r];td.style.background=c===extractCol?'#142219':'#080d0a';td.style.color='#75f5a1';td.style.fontWeight='800';td.style.border=c===extractCol?'2px solid #75f5a1':'1px solid #42634a';td.textContent='·';}
+     else{td.style.border='1px solid #15231a';td.style.background='#050806';td.textContent='';}
+     tr.appendChild(td);
+   }
+   table.appendChild(tr);
+ }
+ grid.appendChild(table);area.appendChild(grid);
+ const clues=document.createElement('div');clues.style.display='grid';clues.style.gap='10px';
+ clueData.forEach(item=>{
+   const wrap=document.createElement('label');wrap.className='mini';wrap.style.display='block';
+   const title=document.createElement('span');title.style.color='var(--green)';title.style.fontWeight='800';title.textContent=`${item.num} ACROSS — ${item.clue}`;
+   const inp=document.createElement('input');inp.id='cw-'+item.id;inp.maxLength=item.len;inp.autocomplete='off';inp.spellcheck=false;inp.placeholder=`${item.len} raidės`;inp.style.width='100%';inp.style.marginTop='5px';inp.style.flex='none';
+   inp.addEventListener('input',()=>{inp.value=inp.value.toLocaleUpperCase('lt-LT').replace(/[^A-ZĄČĘĖĮŠŲŪŽ]/g,'').slice(0,item.len);updateCrosswordGrid();});
+   wrap.appendChild(title);wrap.appendChild(inp);clues.appendChild(wrap);
+ });
+ area.appendChild(clues);
+ const down=document.createElement('p');down.className='mini muted';down.id='cwDown';down.textContent='HIDDEN WORD: _ _ _ _ _ _ _';area.appendChild(down);
+ const btn=document.createElement('button');btn.style.marginTop='12px';btn.textContent='CHECK CROSSWORD';
+ btn.addEventListener('click',()=>{
+   const good=clueData.every(item=>norm($('cw-'+item.id).value)===norm(item.answer));
+   if(good){completed[stage]=true;$('feedback').textContent='✓ '+stages[stage].success;$('feedback').className='feedback good';log(stages[stage].success);btn.disabled=true;setTimeout(()=>{stage++;render();},850);}
+   else{$('feedback').textContent='Dar ne visai. Patikrink žodžių rašybą ir pirmąsias raides.';$('feedback').className='feedback bad';}
+ });
+ area.appendChild(btn);updateCrosswordGrid();
+}
+function updateCrosswordGrid(){
+ const words=[['taip',0],['romantika',1],['isdaiga',2],['uzeiga',3],['sokiai',4],['arklys',5],['sony',6]];
+ words.forEach(([id,row])=>{
+   const val=($('cw-'+id)?.value||'').toLocaleUpperCase('lt-LT');
+   for(let c=0;c<9;c++){const cell=$(`cwcell-${row}-${c}`);if(cell)cell.textContent=val[c]||'·';}
+ });
+ const extractIndexes=[0,4,3,2,0,0,0]; const firsts=words.map(([id],i)=>{const val=($('cw-'+id)?.value||'').toLocaleUpperCase('lt-LT');return val[extractIndexes[i]]||'_';});
+ const d=$('cwDown');if(d)d.textContent='HIDDEN WORD: '+firsts.join(' ');
+}
+function renderWordle(){
+ const area=$('dynamicArea');
+ const board=document.createElement('div');board.id='wordleBoard';board.style.display='grid';board.style.gap='6px';board.style.maxWidth='360px';board.style.margin='12px auto';
+ for(let r=0;r<6;r++){
+   const row=document.createElement('div');row.style.display='grid';row.style.gridTemplateColumns='repeat(6,1fr)';row.style.gap='6px';row.id='wordle-row-'+r;
+   for(let c=0;c<6;c++){
+     const cell=document.createElement('div');cell.style.aspectRatio='1';cell.style.display='grid';cell.style.placeItems='center';cell.style.border='1px solid #3a5844';cell.style.background='#0a100c';cell.style.color='#fff';cell.style.fontWeight='800';cell.style.fontSize='1.2rem';cell.id=`wordle-${r}-${c}`;row.appendChild(cell);
+   }
+   board.appendChild(row);
+ }
+ area.appendChild(board);
+ const legend=document.createElement('p');legend.className='mini muted';legend.textContent='■ žalia = teisinga vieta   ■ geltona = yra žodyje   ■ pilka = nėra žodyje';area.appendChild(legend);drawWordle();
+}
+function drawWordle(){
+ for(let r=0;r<6;r++)for(let c=0;c<6;c++){const cell=$(`wordle-${r}-${c}`);if(!cell)continue;cell.textContent='';cell.style.background='#0a100c';cell.style.borderColor='#3a5844';}
+ wordleGuesses.forEach((guess,r)=>{
+   const target='KAUKAS'.split(''),letters=guess.split(''),colors=Array(6).fill('#344039');
+   letters.forEach((ch,i)=>{if(ch===target[i]){colors[i]='#23834a';target[i]=null;}});
+   letters.forEach((ch,i)=>{if(colors[i]!=='#23834a'){const ix=target.indexOf(ch);if(ix>=0){colors[i]='#a47a20';target[ix]=null;}}});
+   letters.forEach((ch,c)=>{const cell=$(`wordle-${r}-${c}`);if(cell){cell.textContent=ch;cell.style.background=colors[c];cell.style.borderColor=colors[c];}});
+ });
+ $('answerInput').disabled=wordleGuesses.length>=6||wordleGuesses.includes('KAUKAS');$('submitBtn').disabled=$('answerInput').disabled;
+}
+function submitWordle(){
+ const guess=norm($('answerInput').value).replace(/[^A-ZĄČĘĖĮŠŲŪŽ]/g,'');
+ if(guess.length!==6){$('feedback').textContent='Įvesk tiksliai 6 raides.';$('feedback').className='feedback bad';return;}
+ if(wordleGuesses.includes(guess)){$('feedback').textContent='Šį žodį jau bandei. Išbandyk kitą.';$('feedback').className='feedback bad';return;}
+ wordleGuesses.push(guess);$('answerInput').value='';drawWordle();
+ if(guess==='KAUKAS'){completed[stage]=true;$('feedback').textContent='✓ '+stages[stage].success;$('feedback').className='feedback good';log(stages[stage].success);setTimeout(()=>{stage++;render();},1000);}
+ else if(wordleGuesses.length>=6){$('feedback').textContent='Bandymų nebeliko. Paspausk RESET MISSION ir bandyk dar kartą.';$('feedback').className='feedback bad';}
+ else{$('feedback').textContent=`Ne visai. Liko ${6-wordleGuesses.length} bandymai.`;$('feedback').className='feedback';}
+}
+function submit(){
+ if(stage>=stages.length)return;
+ if(stage===2){
+  const dates=[$('memoryCurrent')?.value,$('memoryFirst')?.value,$('memoryKiss')?.value];
+  const expected=['2018-07-08','2017-04-02','2016-09-01'];
+  if(dates.some((v,i)=>v!==expected[i])){
+   $('feedback').textContent='MEMORY CHECK FAILED. Patikrink visas tris datas ir bandyk dar kartą.';
+   $('feedback').className='feedback bad';log('Memory Lane verification failed.');return;
+  }
+  completed[stage]=true;$('feedback').textContent='✓ VISOS DATOS PATVIRTINTOS. MEMORY LANE UNLOCKED.';
+  $('feedback').className='feedback good';log('All memory dates verified.');$('submitBtn').disabled=true;
+  setTimeout(()=>{stage++;$('submitBtn').disabled=false;render();},850);return;
+ }
+ if(stage===3){$('feedback').textContent='Naudok kryžiažodžio CHECK CROSSWORD mygtuką.';return;}
+ if(stage===4){submitWordle();return;}
+ const s=stages[stage],v=norm($('answerInput').value),ans=norm(s.answer);
+ if(v===ans){completed[stage]=true;$('feedback').textContent='✓ '+s.success;$('feedback').className='feedback good';log(s.success);$('submitBtn').disabled=true;setTimeout(()=>{stage++;$('submitBtn').disabled=false;if(stage>=stages.length){render();log('Gift protocol unlocked.');}else render();},850);}
+ else{$('feedback').textContent='ACCESS DENIED. Atsakymas neteisingas. Patikrink užuominą ir bandyk dar kartą.';$('feedback').className='feedback bad';log('Incorrect response on layer '+(stage+1)+'.');}
+}
+$('submitBtn').addEventListener('click',submit);$('answerInput').addEventListener('keydown',e=>{if(e.key==='Enter')submit();});
+$('hintBtn').addEventListener('click',()=>{if(stage>=stages.length)return;$('hintBox').textContent='HINT // '+stages[stage].hint;$('hintBox').classList.remove('hidden');if(!hintsUsed[stage]){hintsUsed[stage]=true;log('Hint requested for layer '+(stage+1)+'.');}});
+$('resetBtn').addEventListener('click',()=>{if(confirm('Ar tikrai nori pradėti misiją iš naujo?')){stage=0;hintsUsed=[false,false,false,false,false];completed=[false,false,false,false,false];knightSelected=false;wordleGuesses=[];crosswordAnswers={};render();log('Mission reset.');}});
+$('playAgainBtn')?.addEventListener('click',()=>{stage=0;hintsUsed=[false,false,false,false,false];completed=[false,false,false,false,false];knightSelected=false;wordleGuesses=[];crosswordAnswers={};render();log('Replay initiated.');});
+log(stages[0].introLog);render();
+</script>
+</body>
+</html>
